@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        Automobile ladaGranta = new Automobile("LADA", "Granta",1.7,"Yellow",2015,"Russia");
+        Automobile ladaGranta = new Automobile(null, "Granta",0,"Yellow",2015,"Russia");
         ladaGranta.printAutomobile();
 
         System.out.println();
