@@ -1,4 +1,4 @@
-public class Automobile {
+public class Car {
 
     String brand;
     String model;
@@ -7,7 +7,7 @@ public class Automobile {
     int productionYear;
     String productionCountry;
 
-    public Automobile(String brand, String model, double engineVolume, String color, int productionYear, String productionCountry) {
+    public Car(String brand, String model, double engineVolume, String color, int productionYear, String productionCountry) {
         this.brand = brand;
         if (this.brand == null || this.brand == "") {
             this.brand = "default";
@@ -17,7 +17,7 @@ public class Automobile {
             this.model = "default";
         }
         this.engineVolume = engineVolume;
-        if (this.engineVolume <= 0) {
+        if (Double.compare(this.engineVolume,0)==0) {
             this.engineVolume = 1.5;
         }
         this.color = color;
